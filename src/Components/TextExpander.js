@@ -20,10 +20,10 @@ function TextExpander({
       return children;
     } else {
       if (typeof children === "string") {
-        const words = children.split(" ");
-        const shrinked = words
+        const shrinked = children
+          .split(" ")
           .slice(0, collapsedNumWords)
-          .reduce((sentence, word) => sentence.concat(" ", word), "");
+          .join(" ");
         return shrinked;
       }
       return "Only Text can be expanded or shrinked. Please pass in a string";

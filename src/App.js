@@ -10,9 +10,6 @@ function App() {
         are constantly venturing out into the cosmos to uncover its secrets and
         push the boundaries of what's possible.
       </TextExpander>
-      <TextExpander>
-        <p>Hello world</p>
-      </TextExpander>
 
       <TextExpander
         collapsedNumWords={20}
